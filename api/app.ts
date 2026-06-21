@@ -9,6 +9,7 @@ import configRoutes from './routes/configs.js'
 import pullRoutes from './routes/pull.js'
 import encryptionRoutes from './routes/encryption.js'
 import logRoutes from './routes/logs.js'
+import auditLogRoutes from './routes/audit-logs.js'
 import clientRoutes from './routes/clients.js'
 import eventRoutes from './routes/events.js'
 
@@ -25,6 +26,7 @@ app.use('/api/projects', configRoutes)
 app.use('/api/pull', pullRoutes)
 app.use('/api/encryption', encryptionRoutes)
 app.use('/api/logs', logRoutes)
+app.use('/api/audit-logs', auditLogRoutes)
 app.use('/api/clients', clientRoutes)
 app.use('/api/events', eventRoutes)
 

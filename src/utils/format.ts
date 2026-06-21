@@ -58,3 +58,43 @@ export function envColor(env: string): string {
   };
   return colors[env] || 'bg-slate-500/20 text-slate-400 border-slate-500/30';
 }
+
+export function auditOperationLabel(type: string): string {
+  const labels: Record<string, string> = {
+    create: '新增',
+    update: '修改',
+    delete: '删除',
+    encrypt: '加密',
+    decrypt: '解密',
+  };
+  return labels[type] || type;
+}
+
+export function auditOperationColor(type: string): string {
+  const colors: Record<string, string> = {
+    create: 'bg-emerald-500/20 text-emerald-400',
+    update: 'bg-blue-500/20 text-blue-400',
+    delete: 'bg-rose-500/20 text-rose-400',
+    encrypt: 'bg-amber-500/20 text-amber-400',
+    decrypt: 'bg-purple-500/20 text-purple-400',
+  };
+  return colors[type] || 'bg-slate-500/20 text-slate-400';
+}
+
+export function changeFieldLabel(field: string): string {
+  const labels: Record<string, string> = {
+    value: '配置值',
+    description: '描述',
+    encrypted: '加密状态',
+  };
+  return labels[field] || field;
+}
+
+export function formatEncryptedDisplay(encrypted: boolean): string {
+  return encrypted ? '已加密' : '明文';
+}
+
+export function maskToken(token: string): string {
+  if (!token || token.length <= 16) return '********';
+  return token.slice(0, 8) + '********' + token.slice(-8);
+}

@@ -63,3 +63,36 @@ export interface PullResponse {
 }
 
 export type LogType = LogEntry['type'];
+
+export type AuditOperationType = 'create' | 'update' | 'delete' | 'encrypt' | 'decrypt';
+
+export interface AuditValueChange {
+  field: string;
+  oldValue: string | null;
+  newValue: string | null;
+}
+
+export interface AuditLogEntry {
+  id: string;
+  timestamp: string;
+  operationType: AuditOperationType;
+  operatorId: string;
+  operatorName: string;
+  operatorToken: string;
+  projectId: string;
+  projectName: string;
+  environment: string;
+  configKey: string;
+  configDescription?: string;
+  configEncrypted: boolean;
+  changes: AuditValueChange[];
+  clientIp: string;
+  userAgent: string;
+}
+
+export interface AuditLogsData {
+  logs: AuditLogEntry[];
+  lastArchivedAt?: string;
+}
+
+export type AuditOperationTypeFilter = AuditOperationType | '';

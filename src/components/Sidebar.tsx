@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Settings, Shield, ScrollText, Radio, ChevronLeft, ChevronRight, Server } from 'lucide-react';
+import { LayoutDashboard, Settings, Shield, ScrollText, Radio, ChevronLeft, ChevronRight, Server, FileSearch } from 'lucide-react';
 import { useAppStore } from '@/stores/appStore';
 
 const navItems = [
@@ -7,6 +7,7 @@ const navItems = [
   { to: '/configs', icon: Settings, label: '配置管理' },
   { to: '/encryption', icon: Shield, label: '加密管理' },
   { to: '/logs', icon: ScrollText, label: '操作日志' },
+  { to: '/audit-logs', icon: FileSearch, label: '审计日志' },
   { to: '/clients', icon: Radio, label: '客户端通知' },
 ];
 

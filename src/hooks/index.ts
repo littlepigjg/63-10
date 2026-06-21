@@ -4,6 +4,7 @@ export { matchSSEEvent } from './types';
 export { useProjects } from './useProjects';
 export { useConfigs } from './useConfigs';
 export { useLogs } from './useLogs';
+export { useAuditLogs } from './useAuditLogs';
 export { useClients } from './useClients';
 export { useEncryption } from './useEncryption';
 export { useDocumentVisibility } from './useDocumentVisibility';
