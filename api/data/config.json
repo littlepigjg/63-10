@@ -1,0 +1,37 @@
+{
+  "encryptionKey": "lkw9YyIK4jsHUm59hCpjAojE7EgVdodJKWhBFxFsaYY=",
+  "projects": [
+    {
+      "id": "proj_3eaec566",
+      "name": "????",
+      "description": "????????",
+      "createdAt": "2026-06-17T03:42:29.448Z",
+      "updatedAt": "2026-06-17T03:43:20.259Z",
+      "environments": [
+        {
+          "name": "development",
+          "configs": [
+            {
+              "key": "DB_HOST",
+              "value": "localhost",
+              "description": "?????",
+              "encrypted": false,
+              "updatedAt": "2026-06-17T03:43:09.216Z",
+              "updatedBy": "admin"
+            },
+            {
+              "key": "DB_PASSWORD",
+              "value": "qZOiHreM/jiCdsbzasUY/5tyKw==",
+              "description": "?????",
+              "encrypted": true,
+              "iv": "Ipsuu4jDVPDL2d/o5yFqaA==",
+              "tag": "iuhWj4JCdMuUTgeOmlsppw==",
+              "updatedAt": "2026-06-17T03:43:20.257Z",
+              "updatedBy": "admin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

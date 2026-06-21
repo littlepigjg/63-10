@@ -1,0 +1,12 @@
+{
+  "clients": [
+    {
+      "id": "cli_7ba583ad",
+      "name": "?????",
+      "ip": "192.168.1.100",
+      "token": "971a6b1d2f05bb728822c1ad4c0f821a3ccecb8368c768bb2b07ba719c5a3dc3",
+      "lastHeartbeat": "2026-06-17T03:44:17.330Z",
+      "online": true
+    }
+  ]
+}

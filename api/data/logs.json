@@ -1,0 +1,44 @@
+{
+  "logs": [
+    {
+      "id": "c6ea2400-7aa7-4694-9adf-b3ecc4616378",
+      "timestamp": "2026-06-17T03:43:09.219Z",
+      "type": "change",
+      "clientIp": "",
+      "clientName": "admin",
+      "project": "proj_3eaec566",
+      "environment": "development",
+      "detail": "新增配置项: DB_HOST"
+    },
+    {
+      "id": "227f9932-51be-4500-8b54-9889b3a2c8f6",
+      "timestamp": "2026-06-17T03:43:20.260Z",
+      "type": "change",
+      "clientIp": "",
+      "clientName": "admin",
+      "project": "proj_3eaec566",
+      "environment": "development",
+      "detail": "新增配置项: DB_PASSWORD"
+    },
+    {
+      "id": "6b89aa3f-34e3-44a2-af1e-b22b93ed104d",
+      "timestamp": "2026-06-17T03:43:43.324Z",
+      "type": "pull",
+      "clientIp": "::1",
+      "clientName": "anonymous",
+      "project": "????",
+      "environment": "development",
+      "detail": "客户端 anonymous 拉取了 2 个配置项"
+    },
+    {
+      "id": "87494109-31ea-4b0b-b19e-e41444723e77",
+      "timestamp": "2026-06-17T03:44:17.334Z",
+      "type": "client_register",
+      "clientIp": "192.168.1.100",
+      "clientName": "?????",
+      "project": "",
+      "environment": "",
+      "detail": "新客户端注册: ?????"
+    }
+  ]
+}
